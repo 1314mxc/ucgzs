@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="images/uc_logo.png" sizes="16x16" />
+	<title>优C工作室</title>
+    <meta name="Keywords" content="优C工作室,优C,优C简史,青春南工,南阳理工,南工,软件学院,工作室,UC,uc,Uc,uC,教育,网课,视频">
+    <meta name="description" content="优C工作室，是位于南阳理工学院软件学院的一个技术性社团。通过每届招新来补充新鲜血液，以学长带学弟学妹的方式传承社团精神、学习先进知识，以合作竞争的方式打造精品项目。欢迎你的到来。">
+    <meta name="360-site-verification" content="efec9ca9c0c2bf49b8f54f8ea4626ea8">
+    <meta name="baidu-site-verification" content="f81e4a13096b3a7cab15fe1d39773a4e">
+    <meta name="sogou_site_verification" content="kFeGWcT6tD">
+    <meta name="shenma-site-verification" content="8ef752d11066ef909303c078d32230d6_1456214698">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/weather.css">
+    <script src="js/serach.js"></script>
+</head>
+<body>
+    <div class="scroll_fixed">
+    </div>
+    <div class="banner">
+        <img src="images/banner.jpg" width="100%" id="img" class=" wow bounceInRight" />
+        <script>
+            var a = ["banner.jpg", "banner1.jpg", "banner2.jpg", "banner3.jpg"];
+            var k = 0;
+            var time = 3;
+            var tID;
+            function nextImg() {
+                k++;
+                if (k === a.length)
+                    k = 0;
+                document.getElementById("img").src = "images/" + a[k];
+            }
+            function setTime() {
+                time--;
+                if (time <= 0) {
+                    nextImg();
+                    time = 3;
+
+                }
+            }
+            tID = setInterval("setTime()", 1000);
+        </script>
+        <div class="bg">
+            <div class=" inner">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" />
+                    </a>
+                </div>
+                <span class="menu-drop menu-icon">
+                <img src="images/icon.png" alt=""></span>
+                <nav class=" nav">
+    
+    <ul>
+    <li><a href="javascript:void(0);">优C概况</a></li>
+    <li id="underline"><a href="#zhaoxin">招新</a></li>
+    <li id="underlined"><a href="#shenghuoyule">校园生活</a></li>
+    </ul>
+    
+    </nav>
+                <div class="search">
+                    <input type="text" class="search-txt" placeholder="searh..." autocomplete="off" autofocus id="search_input">
+                    <a href="javascript:void(0);" class="ss">
+                        <img class="fa-search" src="images/search.png"  onclick="return search()"/>
+                    </a>
+					<a class="log" href="login.html" target="_self">社员登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="marque">
+	    <p>消息通知：</p>
+	    <div class="marque_text">
+	        <marquee behavior="scroll" scrollamount="5">我们 在15#604等你！这里，有绝妙的知识体验，我们带你探知，寻技，实操项目，应对面试。
+	            &nbsp;社团方向以Web前后端为主，不排斥Python、java、c++、AI，方向多元，自主选择，社团支持。
+	            <span style="color: skyblue;">新功能 “ 优C社区 ” 开放啦！！！快来一起讨论吧...</span>
+	        </marquee>
+	    </div>
+	</div>
+    <div class="main">
+        <div class="m1">
+            <div class=" inner">
+                <div class="pic wow bounceInRight">
+                    <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/1.gif" />
+                </div>
+                <div class="title  wow bounceInLeft">
+                    <div class="fz40">
+                        教学 · 研究</div>
+                    <a href="javascript:void(0);" class="more"><i></i>查看更多</a>
+                </div>
+                <div class="text  wow bounceInDown">
+                    <div class="box">
+                        <div class="l">
+                            <a href="javascript:void(0);">
+                                <img src="images/1.jpg"></a></div>
+                        <div class="r">
+                            <div class="h">
+                                <a href="javascript:void(0);">孟祥芝课题组与合作者在eLife发表论文 揭示受书写系统及阅读能力调节的中法儿童跨语言普遍的阅读神经回路</a></div>
+                            <div class="p">
+                                研究指出，尽管中法语言结构、正字法深度、表音表意规则存在很大差异，儿童阅读获得/发展过程依然依赖一个跨书写系统的普遍核心阅读回路，该阅读回路受到阅读水平的调节，揭示了阅读习得和阅读困难神经机制的跨语言普遍性。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m2">
+                <div class=" inner">
+                    <div class="d  wow bounceInRight">
+                        <div class="title  wow bounceInDown">
+                            <div class="fz40">
+                                优C · 风云榜</div>
+                            <a href="javascript:void(0);" class="more"><i></i>查看更多</a></div>
+                        <div>
+                            <div class="img">
+                                <a href="javascript:void(0);">
+                                    <img src="images/3.jpg" />
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="javascript:void(0);">
+                                    <div class="h">
+                                        张云起：专注哲学学术、弘扬戏曲文化两不误</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d  wow bounceInLeft">
+                        <div>
+                            <div class="img">
+                                <a href="javascript:void(0);">
+                                    <img src="images/2.jpg" />
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="javascript:void(0);">
+                                    <div class="h">
+                                        袁行霈：格局•眼光•胸襟•气象</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shenghuo" id="shenghuoyule">
+        <div class=" inner">
+            <ul>
+                <li class="even  wow bounceInLeft">
+                    <div class="l">
+                        <div class="d1">
+                            <div class="img">
+								<i class="iconfont icon-yishu"></i>
+                                <div class="h">
+                                    艺术与文化</div>
+                            </div>
+                        </div>
+                        <div class="d2">
+                            <div class="img">
+								<i class="iconfont icon-youyong"></i>
+                                <div class="h">
+                                    生命在于运动</div>
+                            </div>
+                        </div>
+                        <div class="d4">
+                        </div>
+                        <div class="d3">
+                            <div class="img">
+								<i class="iconfont icon-shetuan"></i>
+                                <div class="h">
+                                    我们: 学生社团</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r">
+                        <div class="d5">
+                            <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/7.jpg" />
+                        </div>
+                    </div>
+                </li>
+                <li class="odd  wow bounceInRight">
+                    <div class="l">
+                        <div class="d1">
+                            <a href="https://www.nyist.edu.cn/xysh/xxxl.htm" target="https://www.nyist.edu.cn/xysh/xxxl.htm">
+								<div class="img">
+									<i class="iconfont icon-aixin"></i>
+								    <div class="h">
+								        查看校历</div>
+								</div>
+							</a>
+                        </div>
+                        <div class="d2">
+                            <div class="img">
+								<i class="iconfont icon-tea"></i>
+                                <div class="h">
+                                    茶话会</div>
+                            </div>
+                        </div>
+                        <div class="d4">
+                        </div>
+                        <div class="d3">
+                            <div class="img">
+								<i class="iconfont icon-yishushejichuanmei"></i>
+                                <div class="h">
+                                    游船观影</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r">
+                        <div class="d5">
+                            <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/10.jpg" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" shengming">
+        <div class=" inner">
+            <div class="l   wow bounceInLeft">
+                <div class="title">
+                    <div class="fz40" id="nav">
+                        <a class="now">通知公告</a> · <a>UC声明</a></div>
+                    <div class="a">
+                        <a href="javascript:void(0);" class="more">查看更多</a>
+                    </div>
+                </div>
+                <div id="container">
+                    <section class="tab">
+                    <div class="list">
+                        <div class="item">
+                        <a href="javascript:void(0);">
+                        <div class="h">关于撤销“北京大学国家竞争力研究院”的公告</div>
+                        <div class="date"><span>2020-06-12</span></div>
+                        </a>
+                        </div>
+                        <div class="item"><a href="javascript:void(0);">                            
+                        <div class="h">关于“北京博文思教育咨询中心”有关情况的声明</div>                            
+                        <div class="date"><span>2020-06-09</span></div>                            
+                        </a>                         
+                        </div>
+                        <div class="item"><a href="javascript:void(0);">                            
+                        <div class="h">关于“北京大学书画艺术研究院”有关情况的声明</div>                            
+                        <div class="date"><span>2020-03-05</span></div>                            
+                        </a>                         
+                        </div> 
+                    </div> 
+                    </section>
+                </div>
+            </div>
+            <div class="r   wow bounceInRight">
+                <div class="title">
+                    <div class="fz40">
+                        媒体 · 聚焦UC</div>
+                    <a href="#" class="more">查看更多</a></div>
+                <div class="list">
+                    <div class="item">
+                        <a href="javascript:void(0);">
+                            <div class="pic">
+                                <span>《前线》</span></div>
+                            <div class="h">
+                                北京大学于中国共产党创建之贡献</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:void(0);">
+                            <div class="pic">
+                                <span>人民海军</span></div>
+                            <div class="h">
+                                10名清北学子加入海军，听听他们的“兵之初”体验</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:void(0);">
+                            <div class="pic">
+                                <span>央视网</span></div>
+                            <div class="h">
+                                乘势而上 开启全面建设社会主义现代化国家新征程——专家学者学习领会十九届五中全会精神</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hezuo">
+        <div class="title">
+            <div class="fz40">
+                合作 · 交流</div>
+        </div>
+        <div class="list inner">
+<!--            <div class="item big   wow bounceInLeft">-->
+             <div class="item big   wow bounceInLeft animated" style="visibility: visible;animation-name: bounceInLeft;/* height: 100%; */padding-bottom: 50%;">
+                    <a href="javascript:void(0);">
+                        <!--                    这里是div--></a>
+                    <div class="container">
+<!--                        <div class="h">-->
+<!--                            国际交流</div>-->
+
+
+                    </div>
+             </div>
+<!--                <a href="javascript:void(0);">-->
+<!--&lt;!&ndash;                    这里是div&ndash;&gt;-->
+<!--12313131-->
+<!--                </a>-->
+<!--                <div class="text">-->
+<!--                    <div class="h">-->
+<!--                        国际交流</div>-->
+<!--                </div>-->
+        </div>
+<!--            <div class="item   wow bounceInRight">-->
+<!--                <a href="javascript:void(0);">-->
+<!--                    <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/3.png" />-->
+<!--                </a>-->
+<!--                <div class="text">-->
+<!--                    <div class="h">-->
+<!--                        国内合作</div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="item   wow bounceInRight">
+                <a href="javascript:void(0);">
+                    <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/4.jpg" />
+                </a>
+                <div class="text">
+                    <div class="h">
+                        教育基金会</div>
+                </div>
+            </div>
+            <div class="item   wow bounceInRight">
+                <a href="javascript:void(0);">
+                    <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/5.jpg" />
+                </a>
+                <div class="text">
+                    <div class="h">
+                        港澳台交流</div>
+                </div>
+            </div>
+            <div class="item   wow bounceInRight">
+                <a href="javascript:void(0);">
+                    <img src="images/loading2.gif" class="lazyLoadImg" picAddress="images/6.jpg" />
+                </a>
+                <div class="text">
+                    <div class="h">
+                        北京论坛</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="canguan">
+        <div class="title">
+            <div class="fz40">
+                参观 · 导览</div>
+        </div>
+        <div class="list inner">
+            <ul>
+                <li class=" wow bounceInLeft"><a href="javascript:void(0);">
+                    <img src="images/1.png" /></a>
+                    <div class="h">
+                        参观预约</div>
+                </li>
+                <li class=" wow bounceInRight"><a href="javascript:void(0);">
+                    <img src="images/2.png" /></a>
+                    <div class="h">
+                        UC建设</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="part1 wow bounceInLeft">
+            <div class="inner inners">
+                <a class="alert" href="javascript:void(0);" id="zhaoxin">
+					招新
+					<span>
+						<img src="images/test_uc.png" />
+						优C体验咨询群
+					</span>
+				</a><a href="http://www.expoon.com/20718/" target="_blank">
+                    校园全景图</a> <a href="https://www.nyist.edu.cn/xysh/xxxl.htm" target="https://www.nyist.edu.cn/xysh/xxxl.htm">校历</a> <a class="alert" href="javascript:void(0);">
+					UC特写
+					<span class="span_two">
+						<img src="images/lol_uc.png" />
+						优C·技术封推
+					</span>
+				</a></div>
+        </div>
+        <div class="part2 wow bounceInRight">
+            <div class="logof">
+                <a href="javascript:void(0);">
+                    <img src="images/UCLogo.gif" />
+                </a>
+            </div>
+            <div class="info">
+                <span><a style="cursor: default;">版权所有©优C工作室</a></span> |<span><a style="cursor: default;">地址：河南省南阳市宛城区南阳理工学院计算机与软件学院科技园B区</a></span>
+                |<span><a style="cursor: default;">反馈意见：yunxiaomeng0703@vip.qq.com</a></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div id="map" style="display: none"></div>
+
+    <script src="js/jquery.js" type="text/javascript"></script> 
+    <script src="js/loadingImg.js"></script>
+
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+            new WOW().init();
+        };
+    </script>
+    <script type = "text/javascript" src = "https://webapi.amap.com/maps?v=1.4.15&key=2171f0056a9dd01ef5e353baa4864409"></script>
+    <script src="js/weather.js"></script>
+    <script type="text/html" id="tpl">
+    <div id="app">
+        <h1>{{content}}</h1>
+    </div>
+    </script>
+<script>
+    setMap();
+</script>
+</body>
+</html>

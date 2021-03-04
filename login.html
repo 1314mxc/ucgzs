@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成功第一步，优Cの登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/ban.js"></script>
+    <script type="text/javascript">
+        //获取浏览器页面可见高度和宽度
+        var _PageHeight = document.documentElement.clientHeight,
+            _PageWidth = document.documentElement.clientWidth;
+        //计算loading框距离顶部和左部的距离（loading框的宽度为216px，高度为61px）
+        var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+            _LoadingLeft = _PageWidth > 216 ? (_PageWidth - 216) / 2 : 0;
+        //在页面未加载完毕之前显示的loading Html自定义内容
+        var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:' + _PageHeight + 'px;top:0;background:#f3f8ff;opacity:0.8;filter:alpha(opacity=80);z-index:100000;"><div style="position: absolute; cursor1: wait; left: ' + _LoadingLeft + 'px; top:' + _LoadingTop + 'px; width: auto; height: 117px; line-height: 107px; padding-left: 5px; padding-right: 5px; background: #fff url(\'images/loading2.gif\') no-repeat center/100% 100%; color: #696969; font-family:\'Microsoft YaHei\';">页面资源加载中，请稍等...</div></div>';
+        document.title="Loading content...";
+        //呈现loading效果
+        document.write(_LoadingHtml);
+        //监听加载状态改变
+        document.onreadystatechange = completeLoading;
+        //加载状态为complete时移除loading效果
+        function completeLoading() {
+            if (document.readyState == "complete") {
+                document.title="成功第一步，优Cの登录";
+                var loadingMask = document.getElementById('loadingDiv');
+                loadingMask.parentNode.removeChild(loadingMask);
+
+                // 在这里发请求校验
+                let btn=document.querySelector(".login-btn");
+                let in_name=document.querySelector("#name");
+                let in_pwd=document.querySelector("#password");
+                let in_card=document.querySelector("#idcard");
+                btn.onclick=function(){
+                    if(in_name.value && in_pwd.value && in_card.value){
+                        // 这里造一个模态框，给一个“登录成功，正在去往首页中”的提示，并把用户名放到本地缓存中在首页展示
+                        location.href="index.html"
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+<body oncopy="return false;" oncut="return false;" onpaste="return false;">
+<canvas class="cavs" width="1575" height="1337"></canvas>
+
+<div class="loginmain">
+    <div class="login-title">
+        <span>社员登录</span>
+    </div>
+
+    <div class="login-con">
+        <div class="login-user">
+            <div class="icon">
+                <i class="iconfont icon-yonghu"></i>
+            </div>
+            <input id="name" type="text" name="usernem" placeholder="请输入2-6位用户名" required="required" autocomplete="off" value="" pattern="^[\u4e00-\u9fa5_a-zA-Z]{2,6}$">
+        </div>
+        <div class="login-pwd">
+            <div class="icon">
+                <i class="iconfont icon-mima"></i>
+            </div>
+            <input id="password" type="password" name="pwd" placeholder="请输入4-16位密码(数字+字母)" required="required" autocomplete="off" value="" pattern="^[a-zA-Z0-9]{4,16}$" >
+        </div>
+        <div class="login-yan">
+            <div class="icon">
+                <i class="iconfont icon-yanzhengma2"></i>
+            </div>
+            <input id="idcard" type="text" name="pwd" placeholder="验证码" required="required" autocomplete="off" value="">
+        </div>
+        <div class="login-btn">
+            <input type="button" value="登录">
+        </div>
+    </div>
+</div>
+</body>
+</html>
